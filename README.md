@@ -19,7 +19,7 @@ class Test extends TestCase
 
 ## License
 
-[https://github.com/jstewmc/test-case/blob/master/LICENSE](MIT)
+[MIT](https://github.com/jstewmc/test-case/blob/master/LICENSE)
 
 ## Author
 
