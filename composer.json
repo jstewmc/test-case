@@ -1,0 +1,21 @@
+{
+	"name": "jstewmc/test-case",
+	"description": "Access private properties in unit tests",
+	"license": "MIT",
+	"keywords": ["php", "jstewmc", "test-case", "private", "properties"],
+	"authors": [
+		{
+			"name": "Jack Clayton",
+			"email": "jack@gmail.com"	
+		}
+	],
+	"require": {
+		"php": "^7.0",
+		"phpunit/phpunit": "^5.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Jstewmc\\TestCase\\": "src/"
+		}
+	}
+}
