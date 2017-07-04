@@ -12,7 +12,7 @@ namespace Jstewmc\TestCase;
 /**
  * The tests for the test-case
  */
-class TestCaseTest extends \PHPUnit_Framework_TestCase
+class TestCaseTest extends \PHPUnit\Framework\TestCase
 {
     /* !getProperty() */
     
@@ -21,7 +21,7 @@ class TestCaseTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPropertyThrowsExceptionIfObjectIsNotObject()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException('InvalidArgumentException');
         
         (new TestCase())::getProperty('foo', 'bar');
         
@@ -33,7 +33,7 @@ class TestCaseTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPropertyThrowsExceptionIfNameIsNotProperty()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException('InvalidArgumentException');
         
         (new TestCase())::getProperty('foo', new class {});
     }
@@ -57,7 +57,7 @@ class TestCaseTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPropertyThrowsExceptionIfObjectIsNotObject()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException('InvalidArgumentException');
         
         (new TestCase())::setProperty('foo', 'bar', 'baz');
         
@@ -69,7 +69,7 @@ class TestCaseTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPropertyThrowsExceptionIfNameIsNotProperty()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException('InvalidArgumentException');
         
         (new TestCase())::setProperty('foo', new class {}, 'bar');
     }

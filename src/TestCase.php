@@ -10,7 +10,7 @@
 namespace Jstewmc\TestCase;
 
 use InvalidArgumentException;
-use PHPUnit_Framework_TestCase as Test;
+use PHPUnit\Framework\TestCase as Test;
 use ReflectionObject;
 
 /**
